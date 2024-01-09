@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Anime List</h1>
+
+{% for anime in anime %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ anime.title }}</span>
+      <p>Creator: {{ anime.creator }}</p>
+      <p>Genre: {{ anime.description }}</p>
+      <p>Anime Release Year: {{ anime.release_year}}</p>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
